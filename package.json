@@ -1,0 +1,26 @@
+{
+  "name": "gulp-start-template",
+  "version": "1.0.0",
+  "description": "Initial template for project building",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/utkapodsousom/gulp-start-template.git"
+  },
+  "author": "Mike Kopytin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/utkapodsousom/gulp-start-template/issues"
+  },
+  "homepage": "https://github.com/utkapodsousom/gulp-start-template#readme",
+  "devDependencies": {
+    "browser-sync": "^2.17.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-jade": "^1.1.0",
+    "gulp-sass": "^2.3.2"
+  }
+}
