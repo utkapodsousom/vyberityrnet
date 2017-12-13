@@ -1,0 +1,21 @@
+{
+  "name": "gulp-start-template",
+  "description": "Initial template for project building",
+  "main": "app.js",
+  "authors": [
+    "Mike Kopytin"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/utkapodsousom/gulp-start-template",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize-css": "normalize.css#^7.0.0",
+    "jquery": "^3.2.1"
+  }
+}
