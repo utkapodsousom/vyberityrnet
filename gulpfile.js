@@ -1,5 +1,4 @@
 var gulp        = require('gulp'),
-    wiredep     = require('gulp-wiredep'),
     sass        = require('gulp-sass'),
     minifyCss   = require('gulp-minify-css'),
     sm          = require('gulp-sourcemaps'),
@@ -41,7 +40,6 @@ gulp.task('js', function() {
 
 gulp.task('html', function(){
   return gulp.src(html.in)
-    .pipe(wiredep())
     .pipe(gulp.dest(html.out));
 });
 
