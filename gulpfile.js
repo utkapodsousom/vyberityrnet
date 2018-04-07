@@ -2,6 +2,8 @@ var gulp        = require('gulp'),
     sass        = require('gulp-sass'),
     minifyCss   = require('gulp-minify-css'),
     sm          = require('gulp-sourcemaps'),
+    plumber     = require('gulp-plumber'),
+    notify      = require('gulp-notify'),
     prefix      = require('gulp-autoprefixer'),
     browserSync = require('browser-sync');
 
@@ -43,8 +45,21 @@ gulp.task('html', function(){
     .pipe(gulp.dest(html.out));
 });
 
+gulp.task('img', function(){
+  return gulp.src(img.in)
+    .pipe(gulp.dest(img.out));
+})
+
 gulp.task('sass', function() {
   return gulp.src(css.in + '*.sass')
+    .pipe(plumber({
+      errorHandler: function(err) {
+        notify.onError({
+          title: "Gulp error in " + err.plugin,
+          message: err.toString()
+        })(err);
+      }
+    }))
     .pipe(sm.init())
     .pipe(sass({
       onError: browserSync.notify
@@ -59,6 +74,7 @@ gulp.task('sass', function() {
 gulp.task('watch', function() {
   gulp.watch(css.in + '**/*.*', ['sass']);
   gulp.watch(html.in, ['html']);
+  gulp.watch(img.in, ['img']);
   gulp.watch(js.in, ['js']);
   gulp.watch(html.out + '*.html').on('change', browserSync.reload);
 });
