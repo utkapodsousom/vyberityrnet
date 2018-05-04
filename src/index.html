@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
 
 </head>
 
@@ -60,10 +60,10 @@
         </header>
         <!-- /.top_bar -->
 
-        <div class="jumbotron jumbotron-fluid">
+        <div class="jumbotron jumbotron-fluid biz-bg">
             <div class="container">
                 <h2>Оставьте заявку на подключение и мы соберем для вас
-                    <shan>самые выгодные</span> предложения из всех возможных!</h2>
+                    <span>самые выгодные</span> предложения из всех возможных!</h2>
             </div>
             <!-- /.container -->
         </div>
@@ -164,11 +164,125 @@
                     <!-- /.operator_grid_container -->
                     <h3>Выберите необходимые услуги</h3>
 
+                    <div class="service_container">
+                        <div class="service_item">
+                            <input type="checkbox" name="service_1" id="service_1">
+                            <label for="service_1" class="service_block">
+                                <div class="service_icon">
+                                    <img src="img/inet.svg" alt="">
+                                </div>
+                                <span class="service_name">Интернет</span>
+                            </label>
+                        </div>
+                        <!-- /.service_item -->
+                        <div class="service_item">
+                            <input type="checkbox" name="service_2" id="service_2">
+                            <label for="service_2" class="service_block">
+                                <div class="service_icon">
+                                    <img src="img/tv.svg" alt="">
+                                </div>
+                                <span class="service_name">Телевидение</span>
+                            </label>
+                        </div>
+                        <!-- /.service_item -->
+                        <div class="service_item">
+                            <input type="checkbox" name="service_3" id="service_3">
+                            <label for="service_3" class="service_block">
+                                <div class="service_icon">
+                                    <img src="img/telefon.min.svg" alt="">
+                                </div>
+                                <span class="service_name">Телефония</span>
+                            </label>
+                        </div>
+                        <!-- /.service_item -->
+                        <div class="service_item">
+                            <input type="checkbox" name="service_4" id="service_4">
+                            <label for="service_4" class="service_block">
+                                <div class="service_icon">
+                                    <img src="img/vayfay.svg" alt="">
+                                </div>
+                                <span class="service_name">Wi-Fi</span>
+                            </label>
+                        </div>
+                        <!-- /.service_item -->
+                        <div class="service_item">
+                            <input type="checkbox" name="service_5" id="service_5">
+                            <label for="service_5" class="service_block">
+                                <div class="service_icon">
+                                    <img src="img/aypi.svg" alt="">
+                                </div>
+                                <span class="service_name">Статический IP</span>
+                            </label>
+                        </div>
+                        <!-- /.service_item -->
+                    </div>
+                    <!-- /.service_container -->
+                    <h3>Заполните форму</h3>
+                    <div class="justify-content-center row">
+                        <div class="col-6">
+                            <div class="row">
+                                <div class="form-group col">
+                                    <input class="form-control" type="text" name="name" id="name">
+                                    <label for="name">Ваше имя</label>
+                                </div>
+                                <div class="form-group col">
+                                    <input class="form-control" type="phone" name="phone" id="phone">
+                                    <label for="phone">Телефон</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col">
+                                    <input class="form-control" type="text" name="address" id="address">
+                                    <label for="address">Адрес</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col">
+                                    <textarea name="comment" id="comment" class="form-control"></textarea>
+                                    <label for="comment">Комментарии к заказу</label>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center">
+                                <button class="btn btn-primary" type="submit">Отправить</button>
+                            </div>
+                        </div>
+                    </div>
                 </form>
             </div>
             <!-- /.container -->
         </div>
         <!-- /#offer.section -->
+
+        <div class="section" id="whywe">
+            <div class="container">
+                <div class="well">
+                    <h2>Почему
+                        <span>именно</span> мы</h2>
+                    <p>На нашем сайте собранылучшие предложения популярных интернет-провайдеров Санкт-Петербурга. Благодаря
+                        удобному дизайну вы можете найти наиболее выгодный для себя тариф и оставить заявку на подключение
+                        за считанные секунды. В течение 10 минут после получения запроса мы свяжемся с вами удобным для вас
+                        способом: по телефону или электронной почте.</p>
+                    <p>Наши специалисты готовы ответить на все вопросы, связанные с домашним интернетом, и оперативно организовать
+                        подключение в любом районе Петербурга. Мы работаем более чем с … провайдерами и постоянно расширяем
+                        базу, внимательно следим за новостями компаний и добавляем на сайт свежие предложения и актуальные
+                        акции.</p>
+                </div>
+            </div>
+        </div>
+        <!-- /#whywe.section -->
+
+        <footer id="footer_main" class="navbar navbar-dark bg-dark">
+            <div class="container">
+                <a href="#" class="navbar-brand"><img src="img/logo.min.svg" height="30px" width="100px" alt=""></a>
+                <div class="social_block">
+                    <p>Мы в социальных сетях: </p>
+                    <a href="#"><img src="" alt=""></a>
+                </div>
+                <!-- /.social_block -->
+            </div>
+            <!-- /.container -->
+        </footer>
+        <!-- /#footer_main -->
 
     </div>
     <!-- /.wrapper_main -->

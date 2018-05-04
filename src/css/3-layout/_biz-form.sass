@@ -1,8 +1,34 @@
+.form-group
+    position: relative
+    margin-bottom: 2rem
+
+    input:focus+label,
+    input:active+label,
+    textarea:focus+label,
+    textarea:active+label
+        top: -20px
+        left: 16px
+
+    label
+        position: absolute
+        top: 9px
+        left: 28px
+        transition: all 0.2s ease-out
+    
+textarea
+    min-height: 100px
+    resize: none
+
+label
+    color: #6e7576
+    font-size: 14px
+    
 .operator_grid_container
     display: flex
     flex-flow: row wrap
     justify-content: space-evenly
     align-items: center
+    margin-bottom: 100px
     
 .operator_item
     flex-basis: 16.6%
@@ -20,7 +46,7 @@ label.operator_block
     justify-content: center
     background-color: #fff
     box-shadow: 0 5px 13px 0 rgba(79, 86, 93, 0.2)
-    transition: box-shadow 0.2s ease-out
+    transition: all 0.2s ease-out
 
     img
         max-width: 120px
@@ -34,7 +60,66 @@ label.operator_block:hover
 
 .operator_item
     > input[type="checkbox"]:checked+label
+        transform: scale(1.05)
         box-shadow: 0 5px 13px 0 rgba(41, 171, 226, 0.5)
+        img
+            opacity: 1
+
+.service_container
+    display: flex
+    flex-flow: row nowrap
+    align-items: flex-start
+    justify-content: center
+    max-width: 720px
+    margin: 0 auto
+    margin-bottom: 100px
+
+.service_item
+    flex: 1
+    text-align: center
+    margin: 0 30px
+    > input[type="checkbox"]
+        display: none
+
+    > input[type="checkbox"]:checked + label
+        .service_icon
+            border-color: $primary-color
+            img
+                opacity: 1
+
+        .service_name
+            opacity: 1
+            color: $primary-color
+
+label.service_block
+    display: flex
+    flex-flow: column
+    align-items: center
+    .service_icon
+        width: 74px
+        height: 74px
+        display: flex
+        cursor: pointer
+        align-items: center
+        justify-content: center
+        border-radius: 50%
+        border: 3px solid #f7f8f8
+        background-color: #f7f8f8
+        transition: all 0.2s ease-out
+
+        img
+            max-height: 45px
+            max-width: 45px
+            opacity: 0.5
+            transition: opacity 0.2s ease-out
+
+    .service_name
+        font-weight: 500
+        opacity: 0.5
+        transition: all .2s ease-out
+
+label.service_block:hover
+    .service_icon
         img
             opacity: 1
             
