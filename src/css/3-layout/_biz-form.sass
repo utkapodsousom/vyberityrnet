@@ -2,18 +2,25 @@
     position: relative
     margin-bottom: 2rem
 
-    input:focus+label,
-    input:active+label,
-    textarea:focus+label,
-    textarea:active+label
-        top: -20px
-        left: 16px
+    .form-control
+        border: 2px solid #DBDCDE
+        &:focus
+            border-color: transparent
+            box-shadow: 0 5px 13px 0 rgba(41, 171, 226, 0.5)
 
     label
         position: absolute
         top: 9px
         left: 28px
-        transition: all 0.2s ease-out
+        transition: all 0.2s ease
+
+.form-group.focused,
+.form-group.filled
+    label
+        top: -20px
+        left: 16px
+        color: $primary-color
+        font-size: 12px 
     
 textarea
     min-height: 100px
@@ -26,7 +33,7 @@ label
 .operator_grid_container
     display: flex
     flex-flow: row wrap
-    justify-content: space-evenly
+    justify-content: space-between
     align-items: center
     margin-bottom: 100px
     
@@ -40,19 +47,20 @@ label.operator_block
     width: 150px
     height: 150px
     border-radius: 7px
+    margin: 0 auto
     cursor: pointer
     display: flex
     align-items: center
     justify-content: center
     background-color: #fff
     box-shadow: 0 5px 13px 0 rgba(79, 86, 93, 0.2)
-    transition: all 0.2s ease-out
+    transition: all 0.2s ease
 
     img
         max-width: 120px
         max-height: 120px
         opacity: 0.5
-        transition: opacity 0.2s ease-out
+        transition: opacity 0.2s ease
 
 label.operator_block:hover
     img
@@ -67,7 +75,7 @@ label.operator_block:hover
 
 .service_container
     display: flex
-    flex-flow: row nowrap
+    flex-flow: row wrap
     align-items: flex-start
     justify-content: center
     max-width: 720px
@@ -105,18 +113,18 @@ label.service_block
         border-radius: 50%
         border: 3px solid #f7f8f8
         background-color: #f7f8f8
-        transition: all 0.2s ease-out
+        transition: all 0.2s ease
 
         img
             max-height: 45px
             max-width: 45px
             opacity: 0.5
-            transition: opacity 0.2s ease-out
+            transition: opacity 0.2s ease
 
     .service_name
         font-weight: 500
         opacity: 0.5
-        transition: all .2s ease-out
+        transition: all .2s ease
 
 label.service_block:hover
     .service_icon

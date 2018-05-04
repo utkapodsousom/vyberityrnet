@@ -23,42 +23,54 @@
 
         <header class="top_bar">
             <div class="container">
-                <nav class="navbar navbar-expand-lg navbar-light">
-                    <a href="#" class="navbar-brand">
+                <nav>
+                    <a href="#" class="logo_link">
                         <img src="img/logo.min.svg" alt="" width="100px" height="30px">
                     </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
 
-                    <div class="collapse navbar-collapse" id="navbar">
-                        <ul class="navbar-nav mr-auto">
-                            <li class="nav-item active">
-                                <a href="#offer" class="nav-link">Выбрать акцию</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#howto" class="nav-link">Как подключить</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#about" class="nav-link">О нас</a>
-                            </li>
-                        </ul>
+                    <ul class="nav_links mr-auto">
+                        <li class="nav_item active">
+                            <a href="#offer" class="nav-link">Выбрать акцию</a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#howto" class="nav-link">Как подключить</a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#about" class="nav-link">О нас</a>
+                        </li>
+                    </ul>
 
-                        <a href="#" class="btn btn-primary">Для бизнеса</a>
-                        <div class="phone_block align-middle">
+                    <div class="block_right">
+                        <a href="#" class="btn mk_button">Для бизнеса</a>
+                        <div>
                             <span class="svg_block">
                                 <img src="img/telefon2.min.svg" alt="">
                             </span>
-                            <span class="phone">8-800-555-35-35</span>
+                            <span class="phone_num">8-800-555-35-35</span>
                         </div>
                     </div>
+                    <!-- /.block_right -->
                 </nav>
-                <!-- /.navbar -->
             </div>
             <!-- /.container -->
         </header>
         <!-- /.top_bar -->
+        <div class="header_misc">
+            <div class="container">
+                <ul class="nav_links">
+                    <li class="nav_item active">
+                        <a href="#offer" class="nav-link">Выбрать акцию</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#howto" class="nav-link">Как подключить</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#about" class="nav-link">О нас</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- /.header_misc -->
 
         <div class="jumbotron jumbotron-fluid biz-bg">
             <div class="container">
@@ -219,13 +231,13 @@
                     <!-- /.service_container -->
                     <h3>Заполните форму</h3>
                     <div class="justify-content-center row">
-                        <div class="col-6">
+                        <div class="col-lg-6 col-md-8 col-sm-12">
                             <div class="row">
-                                <div class="form-group col">
+                                <div class="form-group col-md-6 col-sm-12">
                                     <input class="form-control" type="text" name="name" id="name">
                                     <label for="name">Ваше имя</label>
                                 </div>
-                                <div class="form-group col">
+                                <div class="form-group col-md-6 col-sm-12">
                                     <input class="form-control" type="phone" name="phone" id="phone">
                                     <label for="phone">Телефон</label>
                                 </div>
@@ -243,7 +255,7 @@
                                 </div>
                             </div>
                             <div class="row justify-content-center">
-                                <button class="btn btn-primary" type="submit">Отправить</button>
+                                <button class="btn mk_button large" type="submit">Отправить</button>
                             </div>
                         </div>
                     </div>
@@ -265,18 +277,33 @@
                     <p>Наши специалисты готовы ответить на все вопросы, связанные с домашним интернетом, и оперативно организовать
                         подключение в любом районе Петербурга. Мы работаем более чем с … провайдерами и постоянно расширяем
                         базу, внимательно следим за новостями компаний и добавляем на сайт свежие предложения и актуальные
-                        акции.</p>
+                        акции.
+                    </p>
                 </div>
             </div>
         </div>
         <!-- /#whywe.section -->
 
         <footer id="footer_main" class="navbar navbar-dark bg-dark">
-            <div class="container">
-                <a href="#" class="navbar-brand"><img src="img/logo.min.svg" height="30px" width="100px" alt=""></a>
+            <div class="container flex-col">
+                <a href="#" class="navbar-brand">
+                    <img src="img/logo_white.svg" height="30px" width="100px" alt="">
+                </a>
                 <div class="social_block">
                     <p>Мы в социальных сетях: </p>
-                    <a href="#"><img src="" alt=""></a>
+                    <ul class="social_links">
+                        <li>
+                            <a href="#">
+                                <img src="img/vk_logo_light.svg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/vk_logo_light.svg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- /.social_links -->
                 </div>
                 <!-- /.social_block -->
             </div>
@@ -290,6 +317,7 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
