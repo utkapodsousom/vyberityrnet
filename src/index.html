@@ -1,67 +1,181 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>gulp start template</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NetSelect</title>
 
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+
 </head>
+
 <body>
-  <!--[if lt IE 8]>
-      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-  <![endif]-->
+    <!--[if lt IE 8]>
+      <p class="browserupgrade">Вы используете <strong>устаревшую</strong> версию браузера. Пожалуйста, <a href="http://browsehappy.com/">обновите ваш браузер</a>.</p>
+    <![endif]-->
 
-  <div class="header-container">
-      <header class="wrapper clearfix">
-          <h1 class="title">h1.title</h1>
-          <nav>
-              <ul>
-                  <li><a href="#">nav ul li a</a></li>
-                  <li><a href="#">nav ul li a</a></li>
-                  <li><a href="#">nav ul li a</a></li>
-              </ul>
-          </nav>
-      </header>
-  </div>
+    <div class="wrapper_main">
 
-  <div class="main-container">
-      <div class="main wrapper clearfix">
+        <header class="top_bar">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a href="#" class="navbar-brand">
+                        <img src="img/logo.min.svg" alt="" width="100px" height="30px">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-          <article>
-              <header>
-                  <h1>article header h1</h1>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec.</p>
-              </header>
-              <section>
-                  <h2>article section h2</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices. Proin in est sed erat facilisis pharetra.</p>
-              </section>
-              <section>
-                  <h2>article section h2</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices. Proin in est sed erat facilisis pharetra.</p>
-              </section>
-              <footer>
-                  <h3>article footer h3</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor.</p>
-              </footer>
-          </article>
+                    <div class="collapse navbar-collapse" id="navbar">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a href="#offer" class="nav-link">Выбрать акцию</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#howto" class="nav-link">Как подключить</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#about" class="nav-link">О нас</a>
+                            </li>
+                        </ul>
 
-          <aside>
-              <h3>aside</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices.</p>
-          </aside>
+                        <a href="#" class="btn btn-primary">Для бизнеса</a>
+                        <div class="phone_block align-middle">
+                            <span class="svg_block">
+                                <img src="img/telefon2.min.svg" alt="">
+                            </span>
+                            <span class="phone">8-800-555-35-35</span>
+                        </div>
+                    </div>
+                </nav>
+                <!-- /.navbar -->
+            </div>
+            <!-- /.container -->
+        </header>
+        <!-- /.top_bar -->
 
-      </div> <!-- #main -->
-  </div> <!-- #main-container -->
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h2>Оставьте заявку на подключение и мы соберем для вас
+                    <shan>самые выгодные</span> предложения из всех возможных!</h2>
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.jumbotron jumbotron-fluid -->
 
-  <div class="footer-container">
-      <footer class="wrapper">
-          <h3>footer</h3>
-      </footer>
-  </div>
-  
+        <div class="section" id="offer">
+            <div class="container">
+
+                <form action="">
+                    <h3>Выберите желаемых операторов</h3>
+                    <div class="operator_grid_container">
+                        <div class="operator_item">
+                            <input type="checkbox" name="operator_1" id="operator_1">
+                            <label for="operator_1" class="operator_block">
+                                <img src="img/akado.png" alt="">
+                            </label>
+                        </div>
+                        <!-- /.operator_item -->
+                        <div class="operator_item">
+                            <input type="checkbox" name="operator_2" id="operator_2">
+                            <label for="operator_2" class="operator_block">
+                                <img src="img/rostelecom.png" alt="">
+                            </label>
+                        </div>
+                        <!-- /.operator_item -->
+                        <div class="operator_item">
+                            <input type="checkbox" name="operator_3" id="operator_3">
+                            <label for="operator_3" class="operator_block">
+                                <img src="img/rsvo.png" alt="">
+                            </label>
+                        </div>
+                        <!-- /.operator_item -->
+                        <div class="operator_item">
+                            <input type="checkbox" name="operator_4" id="operator_4">
+                            <label for="operator_4" class="operator_block">
+                                <img src="img/netbynet.png" alt="">
+                            </label>
+                        </div>
+                        <!-- /.operator_item -->
+                        <div class="operator_item">
+                            <input type="checkbox" name="operator_5" id="operator_5">
+                            <label for="operator_5" class="operator_block">
+                                <img src="img/prostor.png" alt="">
+                            </label>
+                        </div>
+                        <!-- /.operator_item -->
+                        <div class="operator_item">
+                            <input type="checkbox" name="operator_6" id="operator_6">
+                            <label for="operator_6" class="operator_block">
+                                <img src="img/akado.png" alt="">
+                            </label>
+                        </div>
+                        <!-- /.operator_item -->
+                        <!-- /.operator_item -->
+                        <div class="operator_item">
+                            <input type="checkbox" name="operator_7" id="operator_7">
+                            <label for="operator_7" class="operator_block">
+                                <img src="img/rostelecom.png" alt="">
+                            </label>
+                        </div>
+                        <!-- /.operator_item -->
+                        <div class="operator_item">
+                            <input type="checkbox" name="operator_8" id="operator_8">
+                            <label for="operator_8" class="operator_block">
+                                <img src="img/rsvo.png" alt="">
+                            </label>
+                        </div>
+                        <!-- /.operator_item -->
+                        <div class="operator_item">
+                            <input type="checkbox" name="operator_9" id="operator_9">
+                            <label for="operator_9" class="operator_block">
+                                <img src="img/netbynet.png" alt="">
+                            </label>
+                        </div>
+                        <!-- /.operator_item -->
+                        <div class="operator_item">
+                            <input type="checkbox" name="operator_10" id="operator_10">
+                            <label for="operator_10" class="operator_block">
+                                <img src="img/prostor.png" alt="">
+                            </label>
+                        </div>
+                        <!-- /.operator_item -->
+                        <div class="operator_item">
+                            <input type="checkbox" name="operator_11" id="operator_11">
+                            <label for="operator_11" class="operator_block">
+                                <img src="img/akado.png" alt="">
+                            </label>
+                        </div>
+                        <!-- /.operator_item -->
+                        <div class="operator_item">
+                            <input type="checkbox" name="operator_12" id="operator_12">
+                            <label for="operator_12" class="operator_block">
+                                <img src="img/rostelecom.png" alt="">
+                            </label>
+                        </div>
+                        <!-- /.operator_item -->
+                    </div>
+                    <!-- /.operator_grid_container -->
+                    <h3>Выберите необходимые услуги</h3>
+
+                </form>
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /#offer.section -->
+
+    </div>
+    <!-- /.wrapper_main -->
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
+
 </html>
