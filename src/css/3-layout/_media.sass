@@ -1,7 +1,4 @@
 @media all and (max-width: 1020px)
-    header
-        box-shadow: 0 0 7px 0 rgba(79, 86, 93, 0.2)       
-
     nav
         padding: 10px 0
 
@@ -16,9 +13,6 @@
 
     .header_misc
         display: block
-        ul
-            list-style: none
-            width: 100%
 
 @media all and (max-width: 720px)
     .container
@@ -34,6 +28,9 @@
         flex-basis: 25%
 
 @media all and (max-width: 570px)
+    nav
+        justify-content: space-between
+
     .well
         padding: 50px 20px
 
@@ -44,7 +41,15 @@
         h2
             max-width: 100%
             text-align: center
+    .menu_toggler
+        display: block
 
+    .nav_links
+        flex-direction: column
+        > a,
+        li:last-child
+            display: block        
+    
     footer.navbar
         .flex-col
             flex-direction: column-reverse
@@ -58,5 +63,34 @@
         .social_links
             li:first-child
                 margin-left: 0
+
+    .block_right
+        margin-left: 0
+        .phone
+            margin-left: 0
+        .mk_button,
+        .phone_num
+            display: none
+
+    .logo_link
+        margin-right: 0
+        margin-top: 0
+
+    .operator_grid_container
+        justify-content: space-around
+
+    .header_misc
+        position: absolute
+        left: 0
+        top: 0
+        margin-top: 50px
+        transform: translateY(-150%)
+        &:after
+            content: ''
+            display: table
+            clear: both
+
+        ul li:last-child
+            display: block
 
         

@@ -37,7 +37,8 @@ var css = {
 
 gulp.task('js', function() {
   return gulp.src([
-    'node_modules/jquery/dist/jquery.min.js', 
+    'node_modules/jquery/dist/jquery.min.js',
+    'node_modules/popper.js/dist/popper-utils.min.js',
     'node_modules/popper.js/dist/popper.min.js', 
     'node_modules/bootstrap/dist/js/bootstrap.min.js',
     js.in])
