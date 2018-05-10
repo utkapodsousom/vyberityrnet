@@ -89,6 +89,7 @@ label.operator_block:hover
     > input[type="checkbox"]
         display: none
 
+    &.active,
     > input[type="checkbox"]:checked + label
         .service_icon
             border-color: $primary-color
@@ -99,7 +100,7 @@ label.operator_block:hover
             opacity: 1
             color: $primary-color
 
-label.service_block
+.service_block
     display: flex
     flex-flow: column
     align-items: center
@@ -127,7 +128,7 @@ label.service_block
         opacity: 0.5
         transition: all .2s ease
 
-label.service_block:hover
+.service_block:hover
     .service_icon
         img
             opacity: 1

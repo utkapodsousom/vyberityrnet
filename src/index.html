@@ -24,7 +24,8 @@
         <header class="top_bar">
             <div class="container">
                 <nav>
-                    <a href="javascript:void(0)" class="menu_toggler">
+                    <a href="javascript:void(0)" class="menu_toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#menu_mobile"
+                        aria-controls="menu_mobile" aria-expanded="false" aria-label="Toggle navigation">
                         <span></span>
                         <span></span>
                         <span></span>
@@ -61,7 +62,7 @@
             <!-- /.container -->
         </header>
         <!-- /.top_bar -->
-        <div class="header_misc">
+        <div class="header_misc collapse" id="menu_mobile">
             <div class="container">
                 <ul class="nav_links">
                     <li class="nav_item active">
@@ -81,10 +82,12 @@
         </div>
         <!-- /.header_misc -->
 
-        <div class="jumbotron jumbotron-fluid biz-bg">
+        <div class="jumbotron jumbotron-fluid main-bg">
             <div class="container">
-                <h2>Оставьте заявку на подключение и мы соберем для вас
-                    <span>самые выгодные</span> предложения из всех возможных!</h2>
+                <h2>Выбери самое
+                    <span>
+                        выгодное подключение
+                    </span> к интернету!</h2>
             </div>
             <!-- /.container -->
         </div>
@@ -93,182 +96,148 @@
         <div class="section" id="offer">
             <div class="container">
 
-                <form action="">
-                    <h3>Выберите желаемых операторов</h3>
-                    <div class="operator_grid_container">
-                        <div class="operator_item">
-                            <input type="checkbox" name="operator_1" id="operator_1">
-                            <label for="operator_1" class="operator_block">
-                                <img src="img/akado.png" alt="">
-                            </label>
+                <div class="service_container">
+                    <div class="service_item active" data-filter="inet">
+                        <div class="service_block">
+                            <div class="service_icon">
+                                <img src="img/inet.svg" alt="">
+                            </div>
+                            <span class="service_name">Интернет</span>
                         </div>
-                        <!-- /.operator_item -->
-                        <div class="operator_item">
-                            <input type="checkbox" name="operator_2" id="operator_2">
-                            <label for="operator_2" class="operator_block">
-                                <img src="img/rostelecom.png" alt="">
-                            </label>
-                        </div>
-                        <!-- /.operator_item -->
-                        <div class="operator_item">
-                            <input type="checkbox" name="operator_3" id="operator_3">
-                            <label for="operator_3" class="operator_block">
-                                <img src="img/rsvo.png" alt="">
-                            </label>
-                        </div>
-                        <!-- /.operator_item -->
-                        <div class="operator_item">
-                            <input type="checkbox" name="operator_4" id="operator_4">
-                            <label for="operator_4" class="operator_block">
-                                <img src="img/netbynet.png" alt="">
-                            </label>
-                        </div>
-                        <!-- /.operator_item -->
-                        <div class="operator_item">
-                            <input type="checkbox" name="operator_5" id="operator_5">
-                            <label for="operator_5" class="operator_block">
-                                <img src="img/prostor.png" alt="">
-                            </label>
-                        </div>
-                        <!-- /.operator_item -->
-                        <div class="operator_item">
-                            <input type="checkbox" name="operator_6" id="operator_6">
-                            <label for="operator_6" class="operator_block">
-                                <img src="img/akado.png" alt="">
-                            </label>
-                        </div>
-                        <!-- /.operator_item -->
-                        <!-- /.operator_item -->
-                        <div class="operator_item">
-                            <input type="checkbox" name="operator_7" id="operator_7">
-                            <label for="operator_7" class="operator_block">
-                                <img src="img/rostelecom.png" alt="">
-                            </label>
-                        </div>
-                        <!-- /.operator_item -->
-                        <div class="operator_item">
-                            <input type="checkbox" name="operator_8" id="operator_8">
-                            <label for="operator_8" class="operator_block">
-                                <img src="img/rsvo.png" alt="">
-                            </label>
-                        </div>
-                        <!-- /.operator_item -->
-                        <div class="operator_item">
-                            <input type="checkbox" name="operator_9" id="operator_9">
-                            <label for="operator_9" class="operator_block">
-                                <img src="img/netbynet.png" alt="">
-                            </label>
-                        </div>
-                        <!-- /.operator_item -->
-                        <div class="operator_item">
-                            <input type="checkbox" name="operator_10" id="operator_10">
-                            <label for="operator_10" class="operator_block">
-                                <img src="img/prostor.png" alt="">
-                            </label>
-                        </div>
-                        <!-- /.operator_item -->
-                        <div class="operator_item">
-                            <input type="checkbox" name="operator_11" id="operator_11">
-                            <label for="operator_11" class="operator_block">
-                                <img src="img/akado.png" alt="">
-                            </label>
-                        </div>
-                        <!-- /.operator_item -->
-                        <div class="operator_item">
-                            <input type="checkbox" name="operator_12" id="operator_12">
-                            <label for="operator_12" class="operator_block">
-                                <img src="img/rostelecom.png" alt="">
-                            </label>
-                        </div>
-                        <!-- /.operator_item -->
                     </div>
-                    <!-- /.operator_grid_container -->
-                    <h3>Выберите необходимые услуги</h3>
+                    <!-- /.service_item -->
+                    <div class="service_item" data-filter="tv">
+                        <div class="service_block">
+                            <div class="service_icon">
+                                <img src="img/tv.svg" alt="">
+                            </div>
+                            <span class="service_name">Телевидение</span>
+                        </div>
+                    </div>
+                    <!-- /.service_item -->
+                    <div class="service_item" data-filter="phone">
+                        <div class="service_block">
+                            <div class="service_icon">
+                                <img src="img/telefon.min.svg" alt="">
+                            </div>
+                            <span class="service_name">Телефония</span>
+                        </div>
+                    </div>
+                    <!-- /.service_item -->
+                </div>
+                <!-- /.service_container -->
 
-                    <div class="service_container">
-                        <div class="service_item">
-                            <input type="checkbox" name="service_1" id="service_1">
-                            <label for="service_1" class="service_block">
-                                <div class="service_icon">
-                                    <img src="img/inet.svg" alt="">
-                                </div>
-                                <span class="service_name">Интернет</span>
-                            </label>
+                <div class="cards_block">
+                    <div class="card_item filtr-item" data-category="inet">
+                        <div class="card_meta">
+                            <div class="card_image">
+                                <img src="img/rostelecom.png" alt="">
+                            </div>
+                            <div class="card_text">
+                                <p>Акция 6 месяцев за 900р + 3 месяца цифрового ТВ</p>
+                            </div>
                         </div>
-                        <!-- /.service_item -->
-                        <div class="service_item">
-                            <input type="checkbox" name="service_2" id="service_2">
-                            <label for="service_2" class="service_block">
-                                <div class="service_icon">
-                                    <img src="img/tv.svg" alt="">
-                                </div>
-                                <span class="service_name">Телевидение</span>
-                            </label>
+                        <!-- /.card_meta -->
+                        <div class="card_price">
+                            <p>
+                                <span>300</span> р/мес</p>
                         </div>
-                        <!-- /.service_item -->
-                        <div class="service_item">
-                            <input type="checkbox" name="service_3" id="service_3">
-                            <label for="service_3" class="service_block">
-                                <div class="service_icon">
-                                    <img src="img/telefon.min.svg" alt="">
-                                </div>
-                                <span class="service_name">Телефония</span>
-                            </label>
-                        </div>
-                        <!-- /.service_item -->
-                        <div class="service_item">
-                            <input type="checkbox" name="service_4" id="service_4">
-                            <label for="service_4" class="service_block">
-                                <div class="service_icon">
-                                    <img src="img/vayfay.svg" alt="">
-                                </div>
-                                <span class="service_name">Wi-Fi</span>
-                            </label>
-                        </div>
-                        <!-- /.service_item -->
-                        <div class="service_item">
-                            <input type="checkbox" name="service_5" id="service_5">
-                            <label for="service_5" class="service_block">
-                                <div class="service_icon">
-                                    <img src="img/aypi.svg" alt="">
-                                </div>
-                                <span class="service_name">Статический IP</span>
-                            </label>
-                        </div>
-                        <!-- /.service_item -->
+                        <!-- /.card_price -->
                     </div>
-                    <!-- /.service_container -->
-                    <h3>Заполните форму</h3>
-                    <div class="justify-content-center row">
-                        <div class="col-lg-6 col-md-8 col-sm-12">
-                            <div class="row">
-                                <div class="form-group col-md-6 col-sm-12">
-                                    <input class="form-control" type="text" name="name" id="name">
-                                    <label for="name">Ваше имя</label>
-                                </div>
-                                <div class="form-group col-md-6 col-sm-12">
-                                    <input class="form-control" type="phone" name="phone" id="phone">
-                                    <label for="phone">Телефон</label>
-                                </div>
+                    <!-- /.card_item -->
+                    <div class="card_item filtr-item" data-category="inet">
+                        <div class="card_meta">
+                            <div class="card_image">
+                                <img src="img/prostor.png" alt="">
                             </div>
-                            <div class="row">
-                                <div class="form-group col">
-                                    <input class="form-control" type="text" name="address" id="address">
-                                    <label for="address">Адрес</label>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="form-group col">
-                                    <textarea name="comment" id="comment" class="form-control"></textarea>
-                                    <label for="comment">Комментарии к заказу</label>
-                                </div>
-                            </div>
-                            <div class="row justify-content-center">
-                                <button class="btn mk_button large" type="submit">Отправить</button>
+                            <div class="card_text">
+                                <p>Акция 6 месяцев за 900р + 3 месяца цифрового ТВ</p>
                             </div>
                         </div>
+                        <!-- /.card_meta -->
+                        <div class="card_price">
+                            <p>
+                                <span>300</span> р/мес</p>
+                        </div>
+                        <!-- /.card_price -->
                     </div>
-                </form>
+                    <!-- /.card_item -->
+                    <div class="card_item filtr-item" data-category="inet, tv">
+                        <div class="card_meta">
+                            <div class="card_image">
+                                <img src="img/netbynet.png" alt="">
+                            </div>
+                            <div class="card_text">
+                                <p>Акция 6 месяцев за 900р + 3 месяца цифрового ТВ</p>
+                            </div>
+                        </div>
+                        <!-- /.card_meta -->
+                        <div class="card_price">
+                            <p>
+                                <span>300</span> р/мес</p>
+                        </div>
+                        <!-- /.card_price -->
+                    </div>
+                    <!-- /.card_item -->
+                    <div class="card_item filtr-item" data-category="inet">
+                        <div class="card_meta">
+                            <div class="card_image">
+                                <img src="img/prostor.png" alt="">
+                            </div>
+                            <div class="card_text">
+                                <p>Акция 6 месяцев за 900р + 3 месяца цифрового ТВ</p>
+                            </div>
+                        </div>
+                        <!-- /.card_meta -->
+                        <div class="card_price">
+                            <p>
+                                <span>300</span> р/мес</p>
+                        </div>
+                        <!-- /.card_price -->
+                    </div>
+                    <!-- /.card_item -->
+                    <div class="card_item filtr-item" data-category="inet, tv">
+                        <div class="card_meta">
+                            <div class="card_image">
+                                <img src="img/akado.png" alt="">
+                            </div>
+                            <div class="card_text">
+                                <p>Акция 6 месяцев за 900р + 3 месяца цифрового ТВ</p>
+                            </div>
+                        </div>
+                        <!-- /.card_meta -->
+                        <div class="card_price">
+                            <p>
+                                <span>300</span> р/мес</p>
+                        </div>
+                        <!-- /.card_price -->
+                    </div>
+                    <!-- /.card_item -->
+                    <div class="card_item filtr-item" data-category="inet">
+                        <div class="card_meta">
+                            <div class="card_image">
+                                <img src="img/rsvo.png" alt="">
+                            </div>
+                            <div class="card_text">
+                                <p>Акция 6 месяцев за 900р + 3 месяца цифрового ТВ</p>
+                            </div>
+                        </div>
+                        <!-- /.card_meta -->
+                        <div class="card_price">
+                            <p>
+                                <span>300</span> р/мес</p>
+                        </div>
+                        <!-- /.card_price -->
+                    </div>
+                    <!-- /.card_item -->
+                </div>
+                <!-- /.cards_block -->
+
+                <div class="button_block">
+                    <a href="#" class="btn mk_button hollow">Смотреть еще</a>
+                </div>
+                <!-- /.button_block -->
+
             </div>
             <!-- /.container -->
         </div>
@@ -327,7 +296,9 @@
     <script src="js/popper-utils.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-portfilter.min.js"></script>
     <script src="js/main.js"></script>
+
 </body>
 
 </html>

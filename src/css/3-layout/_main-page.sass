@@ -1,0 +1,57 @@
+.main-bg
+    background: url(../img/img.png) 50% 50% no-repeat
+    background-size: cover
+
+.cards_block
+    width: 100%
+    display: flex
+    flex-flow: row wrap
+    justify-content: space-between
+    align-items: center
+
+.card_item
+    cursor: pointer
+    flex-basis: 30%
+    margin-bottom: 30px
+    padding: 30px
+    border-radius: 7px
+    background-color: #ffffff
+    box-shadow: 0 5px 13px 0 rgba(79, 86, 93, 0.2)
+    transition: all 0.2s ease
+
+    &:hover
+        transform: translateY(-6px)
+        box-shadow: 0 6px 15px 1px rgba(41, 171, 226, 0.5)
+
+    &:active
+        box-shadow: 0 0 3px 0 #29abe2
+        transform: translateY(0)
+
+    .card_meta
+        display: flex
+        flex-flow: row nowrap
+        flex: 1 0
+
+        .card_image
+            flex-basis: 50%
+            img
+                max-width: 70%
+
+        .card_text
+            text-align: right
+            flex-basis: 50%
+
+    .card_price
+        text-align: center
+        p
+            color: $primary-color
+            font-weight: bold
+            font-size: 24px
+            margin-bottom: 0
+
+            span
+                font-weight: bold
+
+.button_block
+    margin: 30px auto
+    text-align: center

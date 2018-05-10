@@ -22,8 +22,14 @@ $(document).ready(function() {
     }
   });
 
-  $(".menu_toggler").click(function(e) {
-    e.preventDefault();    
-    $([this, '.header_misc']).toggleClass("open");
+  $(".navbar-toggler").click(function(e) {
+    var toggler = $(e.currentTarget);
+    if (toggler.attr("aria-expanded") === "false") {
+      $(this).addClass("open");
+    } else {
+      $(this).removeClass("open");
+    }
   });
+
+  
 });
