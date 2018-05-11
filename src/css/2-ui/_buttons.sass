@@ -3,15 +3,23 @@
     padding: 6px 35px
     font-size: 14px
     font-weight: 500
-    color: #fff !important
+    color: #fff
+    transition: all 0.2s ease
     &:hover
         color: #fff
         background-color: darken($primary-color, 5%)
 
     &.hollow
-        border: 
+        border: 2px solid $primary-color 
         color: $primary-color
         background-color: transparent
+        text-transform: uppercase
+        &:hover
+            background-color: $primary-color
+            color: #fff
+        &:focus
+            box-shadow: 0 6px 15px 1px rgba(41, 171, 226, 0.5)
+            outline: none
 
 .large
     text-transform: uppercase
