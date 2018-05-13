@@ -11,6 +11,25 @@ html
   background: $bg-color
   position: relative
 
+body
+  position: relative
+  overflow: visible
+  &.isOpen
+    overflow: hidden
+    .overlay
+      opacity: 0.5
+      z-index: 3
+  .overlay
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background-color: rgb(41,171,226)
+    opacity: 0
+    z-index: -1
+    transition: all .2s ease
+
 .section
   padding: 80px 0
 
@@ -23,3 +42,5 @@ a,
 a:active,
 a:focus
   outline: none
+
+

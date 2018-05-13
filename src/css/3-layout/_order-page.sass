@@ -19,7 +19,8 @@
         span
             text-transform: capitalize
 
-.plan_container
+.plan_container,
+.form_container
     margin-bottom: 100px
 
 .plan_cards
@@ -30,13 +31,15 @@
     justify-content: center
 
     .mk_card
-       flex-basis: 20%
+       flex-basis: 16%
        margin: 0 10px
        margin-bottom: 20px
        background-color: #e9f6fc
        border-radius: 5px
        text-align: center
        padding: 20px
+       flex: 1 0
+       max-width: 160px
 
     .card_icon
         width: 40px
@@ -64,7 +67,10 @@
         font-size: 0.9rem
         color: $text-color
 
-.form_container
-    h5
-        margin-bottom: 30px
+.provider_image
+    margin-bottom: 50px
+    img
+        max-height: 120px
+        max-width: 120px
+
 
