@@ -58,11 +58,11 @@ $(document).ready(function() {
     }
   });
 
-  // $(window).on('scroll', function(){
-  //   if($(this).scrollTop() > 200) {
-  //     $('.top_bar, .header_misc').addClass('fixed');
-  //   } else {
-  //     $('.top_bar, .header_misc').removeClass('fixed');
-  //   }
-  // });
+  $(window).on('scroll', function(){
+    if($(this).scrollTop() > 200) {
+      $('.top_bar, .header_misc').addClass('fixed');
+    } else {
+      $('.top_bar, .header_misc').removeClass('fixed');
+    }
+  });
 });

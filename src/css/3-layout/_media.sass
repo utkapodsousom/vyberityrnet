@@ -75,6 +75,10 @@
         h2
             max-width: 100%
             text-align: center
+
+    h3
+        font-size: 1.6rem
+
     .menu_toggler
         display: block
 
@@ -125,10 +129,9 @@
             transform: translateY(0)
             opacity: 1
         &.fixed
-            top: 0
-            transform: translateY(-200%)
+            top: -150%
             &.open
-                transform: translateY(0)
+                top: 0
                 opacity: 1
         &:after
             content: ''
